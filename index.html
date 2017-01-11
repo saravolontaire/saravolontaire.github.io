@@ -5,50 +5,21 @@
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
- <div class="container center-block">
-        <!-- show slogan on desktop and large screens -->
-        <div class="visible-lg">
-            <h1><a href="/">Easy Decision Maker</a></h1>
-            <p class="slogan">When the decision is too hard or too simple use the Easy Decision Maker</p>                     
-        </div>
-        <div class="center-block form_wrapper">
     <form action="/make-decision/" method="get" role="form" class="form-horizontal">
         <!-- question -->
         <h2>Question</h2>
-        <div class="form-group">
-            <div class="col-sm-12">
                 <input type="text" name="question" id="question" value="" placeholder="Q: Enter your question here" class="form-control input-lg"  />
-            </div>
-        </div>
         <!-- options / answers -->
         <h2>Options</h2>
-        <div class="options_container">
-            <div class="form-group">
-                <div class="col-sm-12">
                     <input type="text" name="options[A]" id="option_a" value="" placeholder="A: " class="form-control input-lg" />
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-12">
                     <input type="text" name="options[B]"id="option_b" value="" placeholder="B: " class="form-control input-lg" />
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-12">
                     <input type="text" name="options[C]" id="option_c" value="" placeholder="C: " class="form-control input-lg" />
-                </div>
-            </div>
-        </div>
         <!-- buttons - add option / ask question -->
-        <div class="form-group answer_control">
-            <div class="col-sm-12">
+ 
                 <button type="button" class="btn btn-default pull-left" onclick="addOption();" id="add_button">
                   <span class="glyphicon glyphicon-plus"></span> Option
                 </button>
                 <input type="submit" class="btn btn-large btn-success pull-right" id="answer_button" value="Answer!">
-            </div>
-        </div>
-    </form>    
-</div>   
+           
 	</body>
 </html>
